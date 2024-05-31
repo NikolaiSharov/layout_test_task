@@ -1,0 +1,45 @@
+.navbar {
+    margin: 0;
+    padding: 50px 20px;
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+
+    &.theme1 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    &.theme2 {
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 200px;
+    }
+
+    & .nav-item {
+        list-style: none;
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+
+        &:hover {
+            border-color: lightskyblue;
+
+            & .nav-link {
+                color: lightskyblue;
+            }
+        }
+
+        & .nav-link {
+            display: block;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
